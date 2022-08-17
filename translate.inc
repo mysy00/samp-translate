@@ -82,13 +82,13 @@ static stock FindOpcodeWithOperand(&address, Opcode:opcode, operand, end = 0);
 static stock RedirectArraySlot(...);
 
 // TODO:
-#define _(%1) \
+#define _T(%1) \
 	g_TS[GetTS("  " #%1)][g_CI]
 
-#define __(%1,%2) \
+#define __T(%1,%2) \
 	g_TS[GetTS("  " #%1)][g_PL[%2]]
 
-#define ___(%1,%2) \
+#define ___T(%1,%2) \
 	g_TS[GetTS("  " #%1)][%2]
 
 stock GetTS(...) {
