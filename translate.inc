@@ -344,7 +344,7 @@ public OnGameModeInit() {
 	Init();
 	
 	#if defined TRA_OnGameModeInit
-		TRA_OnGameModeInit();
+		return TRA_OnGameModeInit();
 	#else
 		return 1;
 	#endif
@@ -368,7 +368,7 @@ public OnJITCompile() {
 	Init();
 	
 	#if defined TRA_OnJITCompile
-		TRA_OnJITCompile();
+		return TRA_OnJITCompile();
 	#else
 		return 1;
 	#endif
